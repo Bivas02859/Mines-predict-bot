@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mines Predictor Bot</title>
+    <script defer src="main.js"></script>
+    <style>
+      body { font-family: sans-serif; padding: 20px; }
+      .grid { display: grid; grid-template-columns: repeat(5, 40px); gap: 5px; }
+      .tile { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa; cursor: pointer; }
+      .safe { background-color: #a0f0a0; }
+      .mine { background-color: #f08080; }
+      .clicked { background-color: #ddd; }
+      .suggestion { font-size: 0.8em; margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <h1>Mines Predictor Bot</h1>
+    <div id="status">Status: Playing...</div>
+    <div id="grid" class="grid"></div>
+    <div class="suggestion" id="suggestion"></div>
+  </body>
+</html>
